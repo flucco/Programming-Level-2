@@ -39,4 +39,19 @@ public class OI {
   // Start the command when the button is released and let it run the command
   // until it is finished as determined by it's isFinished method.
   // button.whenReleased(new ExampleCommand());
+  public final Joystick driveStick;
+
+  public OI() {
+    this.driveStick = new Joystick (0);
+  }
+
+  public double getDriveY() {
+    return this.driveStick.getY();
+  }
+
+  public double getDriveZ() {
+    return this.driveStick.getZ();
+  }
+
+  
 }
